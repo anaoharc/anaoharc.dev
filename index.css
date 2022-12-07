@@ -49,7 +49,7 @@ body {
       }
   
       .start {
-        width: 78px;
+        width: 0px;
         left: 0px;
       }
   
@@ -60,5 +60,5 @@ body {
         border-radius: 8px;
         top: 0px;
         z-index: 0px;
-        transition: all .5s ease 0s;
+        transition: all .3s ease 0s;
       }

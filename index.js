@@ -16,7 +16,7 @@ function hoverAnimated(el) {
   
     const animations = document.querySelector('.animations');
     animations.style.left = '0px';
-    animations.style.width = '60px';
+    animations.style.width = '0px';
   }
   
   function activeClass(el) {
