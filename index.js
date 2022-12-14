@@ -40,18 +40,3 @@ function hoverAnimated(el) {
     animations.style.left = position + 'px';
     animations.style.width = width + 'px';
   }
-
-  const topBtn = document.querySelector('.topBtn');
-  window.onscroll = function() {scrollButton()};
-  function scrollButton() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      topBtn.style.display = 'inline-block';
-    }
-    else {
-      topBtn.style.display = 'none';
-    }
-  }
-  function toTop() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
