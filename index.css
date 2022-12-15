@@ -50,9 +50,15 @@ a:hover {
   position: sticky;
   top: 15px;
 }
+
+.menu-container {
+  display: inline-flex;
+  border: 1px solid #1abc9c;
+  border-radius: 8px;
+}
   
 tab {
-  background-color: #294a6d; /* #2c3e50 */
+  background-color: transparent; /* #294a6d */
   margin: 0px;
   padding: 0px;
   border-radius: 8px;
@@ -118,7 +124,7 @@ a {
   white-space: nowrap;
   width: 0;
   letter-spacing: 0.05em;
-  animation: typing 0.8s steps(25, end) forwards, blink-caret 0.9s step-start infinite;
+  animation: typing 0.8s steps(25, end) forwards, blink-caret 0.9s step-end infinite;
 }
 @keyframes typing {
   from { width: 0% }
