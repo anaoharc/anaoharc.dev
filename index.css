@@ -1,12 +1,28 @@
 body {
-    font-family: Montserrat, Tahoma, sans-serif;
+    font-family: Raleway, Tahoma, sans-serif;
     background-color: #0a2e46;
     margin: 0 auto;
   }
 
 p {
-  font-size: 28px;
+  font-size: 18px;
   color: #fff;
+}
+
+.content a {
+  display: inline;
+  font-size: 18px;
+  color: #1abc9c;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.05em;
 }
   
 .header {
@@ -36,7 +52,7 @@ a:hover {
 }
   
 tab {
-  background-color: #465667; /* #2c3e50 */
+  background-color: #294a6d; /* #2c3e50 */
   margin: 0px;
   padding: 0px;
   border-radius: 8px;
@@ -75,7 +91,7 @@ a {
 }
 
 .content {
-  width: 70%;
+  width: 60%;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -84,7 +100,7 @@ a {
 .title-section {
   margin: 0 auto;
   width: 94%;
-  margin-bottom: -40px;
+  margin-bottom: -50px;
 }
 #subtitle {
   font-size: 28px;
@@ -118,12 +134,14 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: -40px;
 }
 .info-container {
   margin: 2rem;
   min-width: 35%;
   flex: 1;
   text-align: justify;
+
 }
 .headshot {
   margin: 2rem;
@@ -135,4 +153,36 @@ a {
   max-height: 100%;
   width: 400px;
   height: 400px;
+}
+
+.experience {
+  margin: 0 auto;
+  width: 95%;
+  display: block;
+}
+
+.resume-container {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contentbtn {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #1abc9c;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: lighter;
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, .2);
+}
+
+.contentbtn:hover {
+  background-color: #1abc9c;
 }
