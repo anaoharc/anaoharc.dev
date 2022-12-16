@@ -1,8 +1,8 @@
 body {
-    font-family: Raleway, Tahoma, sans-serif;
-    background-color: #0a2e46;
-    margin: 0 auto;
-  }
+  font-family: Raleway, Tahoma, sans-serif;
+  background-color: #0a2e46;
+  margin: 0 auto;
+}
 
 p {
   font-size: 18px;
@@ -32,7 +32,6 @@ h1 {
 }
   
 a {
-  margin-bottom: 5px;
   font-size: 30px;
   color: #333;
   text-decoration: none;
@@ -49,16 +48,19 @@ a:hover {
   margin: 50px 0;
   position: sticky;
   top: 15px;
+  z-index: 1;
+  height: auto;
 }
 
 .menu-container {
   display: inline-flex;
   border: 1px solid #1abc9c;
   border-radius: 8px;
+  height: auto;
 }
   
 tab {
-  background-color: transparent; /* #294a6d */
+  background-color: #0a2e46; /* #294a6d */
   margin: 0px;
   padding: 0px;
   border-radius: 8px;
@@ -66,12 +68,15 @@ tab {
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, .2);
 }
   
-a {
+.menu-container a {
   padding: 8px 15px;
+  border: 0;
+  border-radius: 8px;
   display: inline-block;
   text-decoration: none;
   color: #fff;
   position: relative;
+  transition: 0.4s ease-in-out;
   z-index: 1;
   
   @media (max-width: 768px) {
@@ -79,6 +84,11 @@ a {
       display: none;
     }
   }
+}
+
+.menu-container a:hover {
+  background-color: #1abc9c;
+  border-radius: 8px;
 }
   
 .start {
@@ -101,11 +111,16 @@ a {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .title-section {
   margin: 0 auto;
-  width: 94%;
+  width: 56.5%;
   margin-bottom: -50px;
 }
 #subtitle {
