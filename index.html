@@ -10,10 +10,10 @@
         <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Raleway">
     </head>
-    <body>
+    <body onload="document.getElementById('defaultOpen').click();">
         <header class="menu">
           <div class="menu-container">
-            <tab onmouseout="outside()">
+            <tab>
               <a href="#about">ABOUT</a>
               <a href="#experience">EXPERIENCE</a>
               <a href="#">PROJECTS</a>
@@ -33,7 +33,7 @@
               <p>Hi! I'm Ana, and I'm a Computer Science student born and raised in South Jersey. I've been passionate about web and software development since the day I checked out the book <i>Make Your Own Web Page--For Kids!</i> at my local library when I was ten years old. Since then I've surrounded myself with technology: building my own PC, working in tech environments, and challenging myself to find and solve new problems every day I can.</p>
               <p>Outside of the tech world, I also love music, film, and video games! Feel free to check out my <a href="https://open.spotify.com/user/fleas.on.rats">Spotify</a> and <a href="https://letterboxd.com/fleasonrats/">Letterboxd</a>.</p>
               <p>I am a full-time college student and looking for internships related to software engineering, web development, and cybersecurity!</p>
-              <div class="resume-container"><a href="oharciuc-resume.pdf" target="_blank"><button class="contentbtn" name="View resume" href="oharciuc-resume.pdf" target="_blank">View my resume!</button></a></div>
+              <div class="basic-container"><button class="contentbtn" name="View resume" onclick="resumelnk()">View my resume!</button></div>
             </div>
             <div class="headshot"></div>
           </div>
@@ -41,16 +41,31 @@
             <h1>Experience</h1>
             <p style="text-align: justify;">I am self-taught in a variety of skills and also have had a traditional learning experience in a vocational-technical high school and university. I started professionally working in IT in 2021 as a help desk intern; I was promoted to a full time PC Technician a year later. I am currently seeking to transition into the software and web development industry.</p>
             <div class="experience-container">
-              <div class="education">
-                <h2>Education</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis aliquam tellus, ut hendrerit mi. Proin lorem urna, semper et vehicula ut, malesuada non augue. Aliquam nibh orci, cursus eu tincidunt in, pulvinar sit amet orci. Aenean feugiat hendrerit augue at finibus. Donec iaculis purus sem, sed interdum neque ultrices id. Aenean tincidunt lacinia arcu id mollis. Etiam auctor dolor ut massa ullamcorper scelerisque.</p>
-              </div>
               <div class="work">
                 <h2>Work Experience</h2>
+                <div class="tab">
+                  <button class="tabbtn active" onclick="openTab(event, 'GCIT')" id="defaultOpen">GCIT</button>
+                  <button class="tabbtn" onclick="openTab(event, 'GCIT2')">GCIT (Internship)</button>
+                </div>
+                <div id="GCIT" class="tabcontent">
+                  <h3>Level 1 PC Technician</h3>
+                  <div class="company">Gloucester County Institute of Technology</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis aliquam tellus, ut hendrerit mi. Proin lorem urna, semper et vehicula ut, malesuada non augue.</p>
+                </div>
+                <div id="GCIT2" class="tabcontent">
+                  <h3>Student Technician Internship</h3>
+                  <div class="company">Gloucester County Institute of Technology</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis aliquam tellus, ut hendrerit mi. Proin lorem urna, semper et vehicula ut, malesuada non augue.</p>
+                </div>
+              </div>
+              <div class="skills">
+                <h2>Skills & Technologies</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis aliquam tellus, ut hendrerit mi. Proin lorem urna, semper et vehicula ut, malesuada non augue. Aliquam nibh orci, cursus eu tincidunt in, pulvinar sit amet orci. Aenean feugiat hendrerit augue at finibus. Donec iaculis purus sem, sed interdum neque ultrices id. Aenean tincidunt lacinia arcu id mollis. Etiam auctor dolor ut massa ullamcorper scelerisque.</p>
               </div>
             </div>
+            <div class="basic-container"><button class="contentbtn" name="View LinkedIn" onclick="linkedinlnk()">View my LinkedIn!</button></div>
           </div>
         </div>
+        <script src="index.js"></script>
     </body>
 </html>
