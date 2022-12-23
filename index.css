@@ -338,7 +338,20 @@ li::marker {
   transition: all 1s;
   cursor: hover;
 }
-
 .prev-btn:hover, .next-btn:hover {
   color: #fff;
+}
+
+.email-container {
+  width: 30%;
+  margin: 0 auto;
+  border: 1px solid #1abc9c;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  font-size: 4px;
+  margin-top: 30px;
+  padding: 5px;
 }

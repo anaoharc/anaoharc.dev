@@ -37,6 +37,7 @@ const img = document.querySelector("#proj-img");
 const projname = document.querySelector("#name");
 const skills = document.querySelector("#skills");
 const description = document.querySelector("#description");
+const link = document.querySelector("#link");
 
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
@@ -45,6 +46,7 @@ let curItem = 0;    //starting item
 window.addEventListener("click", function() {
     const item = projects[curItem];
     img.src = item.img;
+    link.href = item.link;
     projname.textContent = item.projname;
     skills.textContent = item.skills;
     description.textContent = item.description;
@@ -53,6 +55,7 @@ window.addEventListener("click", function() {
 function showProject(project) {
     const item = projects[curItem];
     src.img = item.img;
+    href.link = item.link;
     projname.textContent = item.projname;
     skills.textContent = item.skills;
     description.textContent = item.description;
@@ -71,3 +74,11 @@ prevBtn.addEventListener("click", function() {
     }
     showProject(curItem);
 })
+
+/** socials */
+function copyEmail() {
+    var email = document.getElementById("email");
+    email.select();
+    email.setSelectionRange(0, email.length);
+    navigator.clipboard.writeText(email.value);
+}
