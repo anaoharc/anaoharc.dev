@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
     </head>
     <body onload="document.getElementById('defaultOpen').click();">
         <header class="menu">
@@ -16,7 +17,7 @@
             <tab>
               <a href="#about">ABOUT</a>
               <a href="#experience">EXPERIENCE</a>
-              <a href="#">PROJECTS</a>
+              <a href="#projects">PROJECTS</a>
               <a href="#">CONTACT</a>
               <a href="https://www.linkedin.com/in/anaoharciuc/">LINKEDIN</a>
               <div class="animations start"></div>
@@ -68,10 +69,42 @@
               </div>
               <div class="skills">
                 <h2>Skills & Technologies</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis aliquam tellus, ut hendrerit mi. Proin lorem urna, semper et vehicula ut, malesuada non augue. Aliquam nibh orci, cursus eu tincidunt in, pulvinar sit amet orci. Aenean feugiat hendrerit augue at finibus. Donec iaculis purus sem, sed interdum neque ultrices id. Aenean tincidunt lacinia arcu id mollis. Etiam auctor dolor ut massa ullamcorper scelerisque.</p>
+                <p style="margin-bottom: -10px;">The following are languages and technologies that I have used in personal projects, relevant coursework, or professional assignments!</p>
+                <div class="skills-container"><div class="languages"><ul>
+                  <li>HTML & CSS</li>
+                  <li>JavaScript</li>
+                  <li>XAML/WPF</li>
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>C#</li>
+                </ul></div>
+                <div class="tech"><ul>
+                  <li>Windows & Linux environments</li>
+                  <li>Git and GitHub</li>
+                  <li>Azure Active Directory</li>
+                  <li>Microsoft Endpoint Manager</li>
+                </ul></div></div>
               </div>
             </div>
             <div class="basic-container"><button class="contentbtn" name="View LinkedIn" onclick="linkedinlnk()">View my LinkedIn!</button></div>
+          </div>
+          <div class="projects" id="projects">
+            <h1>Projects</h1>
+            <p style="text-align: justify;">More added as new projects are completed!</p>
+            <article class="project">
+              <img src="projimg/ipgpic.png" id="proj-img" alt="Project image">
+              <h3 id="name"><a href="https://anaoharc.github.io/Instant-Password-Generator/" target="_blank">Instant Password Generator</a></h3>
+              <p id="description">A simple website that generates secure passwords with your choice of password criteria and length.</p>
+              <p id="skills">HTML, CSS, JavaScript</p>
+              <div class="button-container">
+                <button class="prev-btn">
+                  <i class="fa-solid fa-circle-chevron-left"></i>
+                </button>
+                <button class="next-btn">
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                </button>
+              </div>
+            </article>
           </div>
         </div>
         <script src="index.js"></script>
