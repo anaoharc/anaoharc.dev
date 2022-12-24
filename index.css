@@ -1,3 +1,7 @@
+* { 
+  box-sizing: border-box;
+}
+
 body {
   font-family: Raleway, Tahoma, sans-serif;
   background-color: #0a2e46;
@@ -236,8 +240,6 @@ tab {
   display: flex;
   border-bottom: 1px solid #1abc9c;
 }
-
-/* Style the buttons inside the tab */
 .tab button {
   background-color: #051c2c;
   flex: 1;
@@ -249,18 +251,12 @@ tab {
   font-size: 17px;
   color: #fff;
 }
-
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #1abc9c;
 }
-
-/* Create an active/current tablink class */
 .tab button.active {
   background-color: #1abc9c;
 }
-
-/* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
@@ -319,16 +315,16 @@ li::marker {
   text-align: center;
 }
 #proj-img {
-  max-width: 175px;
-  max-height: 175px;
+  width: 50%;
+  height: 50%;
   float: center;
-  border-radius: 100px;
+  border-radius: 100%;
 }
 #skills {
   color: #a3a3a3;
   font-style: italic;
 }
-.prev-btn, .next-btn {
+.prev-btn, .next-btn, .copy-button {
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
   color: #1abc9c;
@@ -336,22 +332,52 @@ li::marker {
   background: transparent;
   border: none;
   transition: all 1s;
-  cursor: hover;
+  cursor: pointer;
 }
 .prev-btn:hover, .next-btn:hover {
   color: #fff;
 }
 
-.email-container {
-  width: 30%;
+.contact-container {
+  width: 40%;
   margin: 0 auto;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.copy-container {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+.contact-copy {
+  width: 90%;
+  background-color: #0a2e46;
+  color: #fff;
   border: 1px solid #1abc9c;
+}
+.copy-button {
+  display: inline-block;
+  font-size: 1rem;
+}
+.social-container {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+}
+.social-container a {
+  font-size: 2rem;
+  padding: 10px;
+  display: inline-flex;
 }
 
 footer {
   text-align: center;
   color: #fff;
   font-size: 4px;
-  margin-top: 30px;
   padding: 5px;
 }

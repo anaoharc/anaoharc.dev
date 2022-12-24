@@ -10,6 +10,8 @@
         <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Raleway">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+        <link rel="shortcut icon" href="http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2014-12-10/dfaefda2d6d250462bdfb8f6474d63e0.ico" type="image/x-icon">
+        <link rel="icon" href="http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2014-12-10/dfaefda2d6d250462bdfb8f6474d63e0.ico" type="image/x-icon">
     </head>
     <body onload="document.getElementById('defaultOpen').click();">
         <header class="menu">
@@ -19,7 +21,7 @@
               <a href="#experience">EXPERIENCE</a>
               <a href="#projects">PROJECTS</a>
               <a href="#contact">CONTACT</a>
-              <a href="https://www.linkedin.com/in/anaoharciuc/">LINKEDIN</a>
+              <a href="https://www.linkedin.com/in/anaoharciuc/" target="_blank">LINKEDIN</a>
               <div class="animations start"></div>
             </tab>
           </div>
@@ -108,21 +110,33 @@
           </div>
           <div class="contact" id="contact">
             <h1>Contact</h1>
-            <div class="email-container">
-              <h2>Reach out!</h2>
-              <input type="text" value="anamariaoharciuc@gmail.com" id="email" readonly>
-              <button onclick="copyEmail()" id="copyemail">
+            <div class="contact-container">
+              <p><b>Email</b></p>
+              <div class="copy-container">
+                <input type="text" value="anamariaoharciuc@gmail.com" class="contact-copy" id="email" readonly>
+              <button onclick="copy('email')" class="copy-button" id="copyemail">
                 <i class="fa-regular fa-copy"></i>
               </button>
+              </div>
+              <p><b>Discord</b></p>
+              <div class="copy-container">
+                <input type="text" value="fleasonrats#4654" class="contact-copy" id="discord" readonly>
+              <button onclick="copy('discord')" class="copy-button" id="copydiscord">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+              </div>
             </div>
             <div class="social-container">
               <a href="https://github.com/anaoharc" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://twitter.com/anaoharc" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://mstdn.social/@fleasonrats" target="_blank"><i class="fa-brands fa-mastodon"></i></a>
+              <a href="https://www.instagram.com/anaoharc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
         </div>
         <script src="index.js"></script>
     </body>
     <footer>
-      <p>anaoharc.dev credit to ana oharciuc. icons credited to font awesome.</p>
+      <p>last updated 12/23/2022. anaoharc.dev credit to ana oharciuc. icons credited to font awesome.</p>
     </footer>
 </html>

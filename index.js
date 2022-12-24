@@ -76,9 +76,10 @@ prevBtn.addEventListener("click", function() {
 })
 
 /** socials */
-function copyEmail() {
-    var email = document.getElementById("email");
-    email.select();
-    email.setSelectionRange(0, email.length);
-    navigator.clipboard.writeText(email.value);
+function copy(elementId) {
+    var el = document.getElementById(elementId);
+    el.select();
+    el.setSelectionRange(0, el.length);
+    navigator.clipboard.writeText(el.value);
+    alert("Copied to clipboard!");
 }
