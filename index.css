@@ -337,6 +337,10 @@ li::marker {
 .prev-btn:hover, .next-btn:hover {
   color: #fff;
 }
+.project-counter {
+  color: #a3a3a3;
+  margin-top: 0.5rem;
+}
 
 .contact-container {
   width: 50%;

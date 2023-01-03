@@ -30,7 +30,17 @@ const projects = [
         skills: "HTML, CSS, JavaScript",
         link: "https://anaoharc.github.io/Instant-Password-Generator/",
         img: "projimg/ipgpic.png",
-        description: "A simple website that generates secure passwords with your choice of password criteria and length."
+        description: "A simple website that generates secure passwords with your choice of password criteria and length.",
+        prompt: "OPEN IN BROWSER"
+    },
+    {
+        id: 2,
+        projname: "The Odin Project Repositories",
+        skills: "HTML, CSS",
+        link: "https://github.com/orgs/anaoharc-top/repositories",
+        img: "projimg/toplogo.png",
+        description: "A collection of repositories for projects I have completed as part of The Odin Project.",
+        prompt: "VIEW PROJECTS"
     }
 ]
 const img = document.querySelector("#proj-img");
@@ -38,6 +48,7 @@ const projname = document.querySelector("#name");
 const skills = document.querySelector("#skills");
 const description = document.querySelector("#description");
 const link = document.querySelector("#project-link");
+const prompt = document.querySelector("#prompt");
 
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
@@ -50,6 +61,7 @@ window.addEventListener("click", function() {
     projname.textContent = item.projname;
     skills.textContent = item.skills;
     description.textContent = item.description;
+    prompt.textContent = item.prompt;
 })
 
 function showProject(project) {
@@ -59,6 +71,7 @@ function showProject(project) {
     projname.textContent = item.projname;
     skills.textContent = item.skills;
     description.textContent = item.description;
+    prompt.textContent = item.prompt;
 }
 nextBtn.addEventListener("click", function() {
     curItem++;
