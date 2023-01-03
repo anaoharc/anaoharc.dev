@@ -43,6 +43,8 @@ const projects = [
         prompt: "VIEW PROJECTS"
     }
 ]
+const id = document.querySelector("#id");
+const total = document.querySelector("#total");
 const img = document.querySelector("#proj-img");
 const projname = document.querySelector("#name");
 const skills = document.querySelector("#skills");
@@ -54,25 +56,19 @@ const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 
 let curItem = 0;    //starting item
-window.addEventListener("click", function() {
-    const item = projects[curItem];
-    img.src = item.img;
-    link.href = item.link;
-    projname.textContent = item.projname;
-    skills.textContent = item.skills;
-    description.textContent = item.description;
-    prompt.textContent = item.prompt;
-})
-
+window.addEventListener("click", showProject(curItem))
 function showProject(project) {
     const item = projects[curItem];
     img.src = item.img;
     link.href = item.link;
+    id.textContent = item.id;
+    total.textContent = projects.length;
     projname.textContent = item.projname;
     skills.textContent = item.skills;
     description.textContent = item.description;
     prompt.textContent = item.prompt;
 }
+
 nextBtn.addEventListener("click", function() {
     curItem++;
     if(curItem > projects.length - 1) {
