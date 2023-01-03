@@ -1,6 +1,6 @@
 # anaoharc.dev
 
-**LIVE PREVIEW:** https://anaoharc.github.io/anaoharc.dev/
+**VISIT THE SITE:** https://anaoharc.dev
 
 The source code for my personal website.
 
