@@ -10,36 +10,32 @@
         <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Raleway">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
-        <link rel="shortcut icon" href="projimg/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="projimg/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     </head>
     <body onload="document.getElementById('defaultOpen').click();">
-        <header class="menu">
-          <div class="menu-container">
-            <tab>
-              <a href="#about">ABOUT</a>
-              <a href="#experience">EXPERIENCE</a>
-              <a href="#projects">PROJECTS</a>
-              <a href="#contact">CONTACT</a>
-              <a href="https://www.linkedin.com/in/anaoharciuc/" target="_blank">LINKEDIN</a>
-              <div class="animations start"></div>
-            </tab>
+      <section id="hero">
+        <div class="intro">
+          <div class="title-section" id="about">
+            <div id="subtitle">Hi, I'm</div>
+            <div id="title-container"><div id="title">Ana Oharciuc</div></div>
           </div>
-          </header>
-        <div class="title-section" id="about">
-          <div id="subtitle">Hi, I'm</div>
-          <div id="title-container"><div id="title">Ana Oharciuc</div></div>
+          <div class="headshot"></div>
+        </div>      
+      </section>
+      <nav class="menu">
+        <div class="menu-container">
+          <tab>
+            <a href="#about">ABOUT</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+            <a href="https://www.linkedin.com/in/anaoharciuc/" target="_blank">LINKEDIN</a>
+            <div class="animations start"></div>
+          </tab>
         </div>
+      </nav>
         <div class="content">
-          <div class="intro">
-            <div class="info-container">
-              <p>Hi! I'm Ana, and I'm a Computer Science student born and raised in South Jersey. I've been passionate about web and software development since the day I checked out the book <i>Make Your Own Web Page--For Kids!</i> at my local library when I was ten years old. Since then I've surrounded myself with technology: building my own PC, working in tech environments, and challenging myself to find and solve new problems every day I can.</p>
-              <p>Outside of the tech world, I also love music, film, and video games! Feel free to check out my <a href="https://open.spotify.com/user/fleas.on.rats">Spotify</a> and <a href="https://letterboxd.com/fleasonrats/">Letterboxd</a>.</p>
-              <p>I am a full-time college student and looking for internships related to software engineering, web development, and cybersecurity!</p>
-              <div class="basic-container"><button class="contentbtn" name="View resume" onclick="resumelnk()">View my resume!</button></div>
-            </div>
-            <div class="headshot"></div>
-          </div>
           <div class="experience" id="experience">
             <h1>Experience</h1>
             <p style="text-align: justify;">I am self-taught in a variety of skills and also have had a traditional learning experience in a vocational-technical high school and university. I started professionally working in IT in 2021 as a help desk intern; I was promoted to a full time PC Technician a year later. I am currently seeking to transition into the software and web development industry.</p>
@@ -94,7 +90,7 @@
             <h1>Projects</h1>
             <p style="text-align: justify;">More added as new projects are completed!</p>
             <article class="project">
-              <img src="projimg/ipgpic.png" id="proj-img" alt="Project image">
+              <img src="img/ipgpic.png" id="proj-img" alt="Project image">
               <h3 id="name">PROJECT NAME</h3>
               <a href="LINK" target="_blank" id="project-link"><p id="prompt">OPEN IN BROWSER</p></a>
               <p id="description">DESCRIPTION</p>

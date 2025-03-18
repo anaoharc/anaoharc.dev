@@ -1,3 +1,14 @@
+window.addEventListener('scroll', function () {
+    const hero = document.getElementById('hero');
+    const scrollPosition = window.scrollY;
+  
+    // Calculate opacity for the background color
+    const opacity = Math.max(0, 1 - scrollPosition / 500); // Adjust 500 for effect speed
+  
+    // Update only the background color while keeping the image intact
+    hero.style.backgroundColor = `rgba(26, 188, 156, ${1 - opacity})`;
+  });
+
 /** link functions */
 function resumelnk() {
     window.open("oharciuc-resume.pdf", "_blank");
@@ -29,7 +40,7 @@ const projects = [
         projname: "Instant Password Generator",
         skills: "HTML, CSS, JavaScript",
         link: "https://anaoharc.github.io/Instant-Password-Generator/",
-        img: "projimg/ipgpic.png",
+        img: "img/ipgpic.png",
         description: "A simple website that generates secure passwords with your choice of password criteria and length.",
         prompt: "OPEN IN BROWSER"
     },
@@ -38,7 +49,7 @@ const projects = [
         projname: "The Odin Project Repositories",
         skills: "HTML, CSS",
         link: "https://github.com/orgs/anaoharc-top/repositories",
-        img: "projimg/toplogo.png",
+        img: "img/toplogo.png",
         description: "A collection of repositories for projects I have completed as part of The Odin Project.",
         prompt: "VIEW PROJECTS"
     }
