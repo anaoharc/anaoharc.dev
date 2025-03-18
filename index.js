@@ -2,11 +2,14 @@ window.addEventListener('scroll', function () {
     const hero = document.getElementById('hero');
     const scrollPosition = window.scrollY;
   
-    // Calculate opacity for the background color
+    // Calculate opacity for the background image
     const opacity = Math.max(0, 1 - scrollPosition / 500); // Adjust 500 for effect speed
   
-    // Update only the background color while keeping the image intact
-    hero.style.backgroundColor = `rgba(26, 188, 156, ${1 - opacity})`;
+    // Apply a transparent gradient overlay to the background
+    hero.style.background = `linear-gradient(rgba(51, 61, 41, ${1 - opacity}), rgba(51, 61, 41, ${1 - opacity})), url('img/hero.png')`;
+    hero.style.backgroundSize = 'cover';
+    hero.style.backgroundPosition = 'center';
+    hero.style.backgroundRepeat = 'no-repeat';
   });
 
 /** link functions */
