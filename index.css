@@ -27,12 +27,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content a {
-  display: inline;
   font-size: 1.125em;
-  color: #1abc9c;
-  margin: 0;
-  padding: 0;
-  border: 0;
+  color: #A68A64;
 }
 
 h1 {
@@ -231,7 +227,7 @@ tab {
   height: 25rem;
 }
 
-.experience {
+.experience, .about {
   margin: 0 auto;
   width: 95%;
   display: block;

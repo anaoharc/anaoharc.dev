@@ -3,7 +3,7 @@ window.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
   
     // Calculate opacity for the background image
-    const opacity = Math.max(0, 1 - scrollPosition / 500); // Adjust 500 for effect speed
+    const opacity = Math.max(0, 1 - scrollPosition / 900); // Adjust 500 for effect speed
   
     // Apply a transparent gradient overlay to the background
     hero.style.background = `linear-gradient(rgba(51, 61, 41, ${1 - opacity}), rgba(51, 61, 41, ${1 - opacity})), url('img/hero.png')`;
