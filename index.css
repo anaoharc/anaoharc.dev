@@ -259,6 +259,21 @@ tab {
   background-color: #1abc9c;
 }
 
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #A68A64;
+}
+
+.skills-container abbr {
+  font-size: 3em;
+  padding: 10px;
+}
+
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -409,27 +424,6 @@ tab {
   border-radius: 8px;
   margin-right: 0.625rem;
   margin-bottom: 0.625rem;
-}
-
-.skills {
-  max-width: 38%;
-  height: auto;
-  text-align: justify;
-}
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.skills-container li:not(:last-child) {
-  margin-bottom: 0.938rem;
-}
-.languages {
-  max-width: 50%;
-  flex: 1;
-}
-.tech {
-  max-width: 50%;
 }
 
 .project {
