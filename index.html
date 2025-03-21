@@ -403,28 +403,31 @@
             </article>
           </div>
           <div class="contact" id="contact">
-            <h1>Contact</h1>
+            <h1 style="text-align:center;">Send Me a Message!</h1>
             <div class="contact-container">
-              <p><b>Email</b></p>
-              <div class="copy-container">
-                <input type="text" value="anamariaoharciuc@gmail.com" class="contact-copy" id="email" readonly>
-              <button onclick="copy('email')" class="copy-button" id="copyemail">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-              </div>
-              <p><b>Discord</b></p>
-              <div class="copy-container">
-                <input type="text" value="fleasonrats#4654" class="contact-copy" id="discord" readonly>
-              <button onclick="copy('discord')" class="copy-button" id="copydiscord">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-              </div>
+              <form id="email-form" action="https://formspree.io/f/xkgjjnbq" method="POST">
+                <div class="form-section">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" name="email" id="email" placeholder="johndoe@email.com">
+                </div>
+                <div class="form-section">
+                  <label for="subject" class="form-label">Your Subject</label>
+                  <input type="text" name="subject" id="subject" placeholder="A Cool Subject Here">
+                </div>
+                <div class="form-section">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea name="message" id="message" cols="30" rows="10" placeholder="A Cool Message Here..."></textarea>
+                </div>
+                <input type="text" name="_gotcha" style="display:none" />
+                <div class="form-section">
+                  <button type="submit" id="submit-btn">Send Message</button>
+                </div>
+              </form>
             </div>
             <div class="social-container">
               <abbr title="GitHub"><a href="https://github.com/anaoharc" target="_blank"><i class="fa-brands fa-github"></i></a></abbr>
-              <abbr title="Twitter"><a href="https://twitter.com/anaoharc" target="_blank"><i class="fa-brands fa-twitter"></i></a></abbr>
-              <abbr title="Mastodon"><a href="https://mstdn.social/@fleasonrats" target="_blank"><i class="fa-brands fa-mastodon"></i></a></abbr>
               <abbr title="Instagram"><a href="https://www.instagram.com/anaoharc/" target="_blank"><i class="fa-brands fa-instagram"></i></a></abbr>
+              <abbr title="Spotify"><a href="https://open.spotify.com/user/fleas.on.rats?si=2a0268d9df374f0d" target="_blank"><i class="fa-brands fa-spotify"></i></a></abbr>
             </div>
           </div>
         </div>
@@ -432,6 +435,6 @@
         <script defer src="/_vercel/insights/script.js"></script>
     </body>
     <footer>
-      <p>last updated 01/03/2023. anaoharc.dev credit to ana oharciuc. icons credited to font awesome.<br>images credit to ana oharciuc, pexels (a royalty-free stock image site), and the odin project.<br>this website stores no personal or technical information of the visitor.<br>built with vanilla html, css, and javascript in visual studio code. hosted with vercel and github.</p>
+      <p>last updated 03/20/2025. anaoharc.dev credit to ana oharciuc. icons credited to font awesome.<br>images credit to ana oharciuc, pexels (a royalty-free stock image site), and the odin project.<br>this website stores no personal or technical information of the visitor.<br>built with vanilla html, css, and javascript in visual studio code. hosted with vercel and github.</p>
     </footer>
 </html>
