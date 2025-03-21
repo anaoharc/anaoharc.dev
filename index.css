@@ -281,7 +281,6 @@ tab {
   margin-bottom: 20px;
 }
 
-/* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: '';
   position: absolute;
@@ -293,7 +292,6 @@ tab {
   margin-left: -3px;
 }
 
-/* Container around content */
 .timeline-container {
   padding: 10px 40px;
   position: relative;
@@ -301,7 +299,6 @@ tab {
   width: 50%;
 }
 
-/* The circles on the timeline */
 .timeline-container::after {
   content: '';
   position: absolute;
@@ -315,17 +312,14 @@ tab {
   z-index: 1;
 }
 
-/* Place the container to the left */
 .left {
   left: 0;
 }
 
-/* Place the container to the right */
 .right {
   left: 50%;
 }
 
-/* Add arrows to the left container (pointing right) */
 .left::before {
   content: " ";
   height: 0;
@@ -339,7 +333,6 @@ tab {
   border-color: transparent transparent transparent #B6AD90;
 }
 
-/* Add arrows to the right container (pointing left) */
 .right::before {
   content: " ";
   height: 0;
@@ -353,12 +346,10 @@ tab {
   border-color: transparent #B6AD90 transparent transparent;
 }
 
-/* Fix the circle for containers on the right side */
 .right::after {
   left: -16px;
 }
 
-/* The actual content */
 .timeline-content {
   padding: 5px 20px;
   background-color: #B6AD90;
@@ -372,21 +363,18 @@ tab {
   background-color: #a69c7d;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
 /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
   }
 
-/* Full-width containers */
   .timeline-container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
-/* Make sure that all arrows are pointing leftwards */
   .timeline-container::before {
     left: 60px;
     border: medium solid #B6AD90;
@@ -394,12 +382,10 @@ tab {
     border-color: transparent #B6AD90 transparent transparent;
   }
 
-/* Make sure all circles are at the same spot */
   .left::after, .right::after {
     left: 15px;
   }
 
-/* Make all right containers behave like the left ones */
   .right {
     left: 0%;
   }
@@ -439,7 +425,7 @@ tab {
   width: 50%;
   height: 50%;
   float: center;
-  border-radius: 100%;
+  border-radius: 10%;
 }
 #skills {
   color: #a3a3a3;
@@ -448,7 +434,7 @@ tab {
 .prev-btn, .next-btn, .copy-button {
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
-  color: #1abc9c;
+  color: #A4AC86;
   font-size: 2.5rem;
   background: transparent;
   border: none;
@@ -456,10 +442,10 @@ tab {
   cursor: pointer;
 }
 .prev-btn:hover, .next-btn:hover {
-  color: #fff;
+  color: #B6AD90;
 }
 .project-counter {
-  color: #a3a3a3;
+  color: #C2C5AA;
   margin-top: 0.5rem;
 }
 

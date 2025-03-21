@@ -12,34 +12,38 @@ window.addEventListener('scroll', function () {
     hero.style.backgroundRepeat = 'no-repeat';
   });
 
-/** link functions */
-function resumelnk() {
-    window.open("oharciuc-resume.pdf", "_blank");
-}
-function linkedinlnk() {
-    window.open("https://www.linkedin.com/in/anaoharciuc/", "_blank");
-}
-
-/** experience tabs */
-function openTab(evt, tabName) {
-    var i, tabcontent, tabbtn;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tabbtn = document.getElementsByClassName("tabbtn");
-    for (i = 0; i < tabbtn.length; i++) {
-        tabbtn[i].className = tabbtn[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-
 /** project info */
 'use strict';
 const projects = [
     {
         id: 1,
+        projname: "Mobile Photo API Integration",
+        skills: "React Native, JavaScript, Python",
+        link: "https://info.runsignup.com/2025/02/25/new-mobile-timing-app-photo-capture-integration/",
+        img: "img/runsignup_sweng_app.png",
+        description: "A mobile application created for endurance company RunSignUp to integrate with their existing technologies.",
+        prompt: "VIEW ARTICLE"
+    },
+    {
+        id: 2,
+        projname: "Rowan University ADDP Portal",
+        skills: "HTML, CSS, JavaScript, Bootstrap, PHP, MySQL",
+        link: "https://rucsm.org/cs/addp_portal/",
+        img: "img/addp_portal.png",
+        description: "A web application developed for the Rowan University Computer Science Department to manage applications for the Accelerated Dual Degree Program (ADDP) for graduate students.",
+        prompt: "OPEN IN BROWSER"
+    },
+    {
+        id: 3,
+        projname: "Bodymorph",
+        skills: "Figma, UI/UX Design",
+        link: "./other/Bodymorph.pdf",
+        img: "img/bodymorph.png",
+        description: "A UI/UX design project for a mobile application that allows users to track their workout routines and nutritional intake.",
+        prompt: "VIEW DESIGN"
+    },
+    {
+        id: 4,
         projname: "Instant Password Generator",
         skills: "HTML, CSS, JavaScript",
         link: "https://anaoharc.github.io/Instant-Password-Generator/",
@@ -48,14 +52,15 @@ const projects = [
         prompt: "OPEN IN BROWSER"
     },
     {
-        id: 2,
+        id: 5,
         projname: "The Odin Project Repositories",
         skills: "HTML, CSS",
         link: "https://github.com/orgs/anaoharc-top/repositories",
         img: "img/toplogo.png",
         description: "A collection of repositories for projects I have completed as part of The Odin Project.",
         prompt: "VIEW PROJECTS"
-    }
+    },
+
 ]
 const id = document.querySelector("#id");
 const total = document.querySelector("#total");
@@ -109,13 +114,4 @@ function disableBtnStyle() {
 }
 if(projects.length - 1 < 1) {
     disableBtnStyle();
-}
-
-/** socials */
-function copy(elementId) {
-    var el = document.getElementById(elementId);
-    el.select();
-    el.setSelectionRange(0, el.length);
-    navigator.clipboard.writeText(el.value);
-    alert("Copied to clipboard!");
 }
